@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  
+</head>
+<body>
+  <header>
+    <h1><%= title %></h1>
+    <h2>Designed by Zhou</h2>
+    <p>
+      Volume<input type="range" id="volume" min="0" max="100" value="60">
+    </p>
+    <button id="pre">pre</button>
+    <button id="play">play</button>
+    <button id="next">next</button>
+
+  </header>
+  <div class="left">
+    <ul id="list">
+     <% music.forEach(function(name){%>
+     <li title="<%= name %>"><%= name %></li>
+     <% }) %>
+
+   </ul>
+
+ </div>
+
+ <div class="right" id="box">
+
+ </div>
+ <script type="text/javascript" src="/javascripts/index.js"></script>
+</body>
+</html>

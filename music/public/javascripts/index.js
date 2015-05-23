@@ -135,10 +135,10 @@ function draw(arr){
 	//var w = width/128;
 	for(var i =0;i<(width/13+2);i++){
 		var o = doc[i];
-		var h =arr[i]/320 * height;
+		var h =arr[i]/270 * height;
 		ctx.fillStyle=line;
 		ctx.fillRect(15*i,height-h,13,h);
-		ctx.fillStyle="#000";
+		ctx.fillStyle="#838B8B";
 		ctx.fillRect(15*i,height-(o.cap+1.5),13,2);
 		o.cap-=1.8;
 		if(o.cap<0){
